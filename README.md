@@ -46,7 +46,6 @@ Sube los cambios (git push origin feature/nueva-funcionalidad).
 
 Abre un Pull Request.
 
-[Captura de Pantalla del Juego](screenshot.png)
 
 Resumen Final:
 
