@@ -46,6 +46,20 @@ Sube los cambios (git push origin feature/nueva-funcionalidad).
 
 Abre un Pull Request.
 
+📸 Capturas de pantalla
+Pantalla principal
+
+
+[Amigo Secreto.pdf](https://github.com/user-attachments/files/18553981/Amigo.Secreto.pdf)
+
+Pantalla principal con amigos cargados
+
+[Amigo Secreto 2.pdf](https://github.com/user-attachments/files/18553989/Amigo.Secreto.2.pdf)
+
+Resultado del sorteo
+
+[Amigo Secreto 3.pdf](https://github.com/user-attachments/files/18553993/Amigo.Secreto.3.pdf)
+
 Resumen Final:
 
 1.Inicializamos la lista de amigos.
