@@ -48,8 +48,9 @@ Abre un Pull Request.
 
 📸 Capturas de pantalla
 Pantalla principal
+![amigo-secreto](https://github.com/user-attachments/assets/600c9398-e5c1-4e55-90d0-8c202df999ef)
 
-![image](https://github.com/user-attachments/assets/46f4ce97-3ec9-4f29-9e82-07e4671e0bc8)
+
 
 Pantalla principal con amigos cargados
 
