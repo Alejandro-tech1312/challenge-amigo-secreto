@@ -1,87 +1,50 @@
-Aquí te detallo cada paso que realizamos para llegar al resultado final:
-Paso 1: Crear una lista de amigos
-Inicializamos una lista vacía para almacenar los nombres de los amigos que participarán en el sorteo.
+# Challenge Amigo Secreto 🎁
 
-let amigos = [];
+## Descripción
+Este proyecto implementa un sistema para organizar un "Amigo Secreto". Facilita la asignación aleatoria de amigos secretos y proporciona una interfaz para gestionar el proceso.
 
-Paso 2: Función para agregar amigos
-Creamos una función agregarAmigo que obtiene el nombre ingresado en el campo de texto, lo valida y lo añade a la lista de amigos. Luego, actualiza la visualización de la lista.
+## Requisitos
+- **Java 11** o superior
+- **Maven** (para la gestión de dependencias)
 
-function agregarAmigo() {
-    const input = document.getElementById("amigo");
-    const nombre = input.value.trim();
-    if (nombre !== "") {
-        amigos.push(nombre);
-        actualizarLista();
-        input.value = "";
-    }     
-}
-Paso 3: Función para actualizar la lista de amigos
-Esta función toma la lista de amigos y actualiza el contenido del elemento HTML correspondiente para mostrar todos los nombres ingresados.
+## Instalación 🚀
+Sigue estos pasos para instalar y configurar el proyecto:
 
-function actualizarLista() {
-    const lista = document.getElementById("listaAmigos");
-    lista.innerHTML = "";
-    amigos.forEach((amigo, index) => {
-        const li = document.createElement("li");
-        li.textContent = amigo;
-        li.classList.add("name-item");
-        lista.appendChild(li);
-    });
-}
-Paso 4: Función para sortear el amigo secreto
-Esta función mezcla la lista de participantes de manera aleatoria y asigna un amigo secreto a cada uno. Luego, llama a la función mostrarResultados para mostrar el resultado.
+```bash
+# Clonar el repositorio
+git clone https://github.com/Alejandro-tech1312/challenge-amigo-secreto.git
 
-function sortearAmigo() {
-    if (amigos.length < 2) {
-        alert("Necesitas al menos 2 amigos para hacer el sorteo.");
-        return;
-    }
+# Navegar al directorio del proyecto
+cd challenge-amigo-secreto
 
-    let participantes = [...amigos];
-    for (let i = participantes.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [participantes[i], participantes[j]] = [participantes[j], participantes[i]];
-    }
+# Instalar las dependencias
+mvn install
 
-    let asignaciones = {};
-    for (let i = 0; i < participantes.length; i++) {
-        asignaciones[participantes[i]] = participantes[(i + 1) % participantes.length];
-    }
+Uso 📋
+Instrucciones para compilar y ejecutar el proyecto:
 
-    mostrarResultados(asignaciones);
+# Compilar el proyecto
+mvn compile
 
-    // Retrasar el reinicio del juego para que se vea el resultado
-    setTimeout(reiniciarJuego, 5000); // 5000 ms = 5 segundos
-}
-Paso 5: Función para mostrar los resultados
-Modificamos esta función para que solo muestre un resultado y oculte la lista de amigos ingresados. El mensaje se muestra de forma personalizada como "El amigo secreto sorteado es...".
+# Compilar el proyecto
+mvn compile
 
-function mostrarResultados(asignaciones) {
-    const resultado = document.getElementById("resultado");
-    resultado.innerHTML = "";
+# Ejecutar el proyecto
+mvn exec:java -Dexec.mainClass="com.example.Main"
 
-    // Ocultar la lista de amigos
-    document.getElementById("listaAmigos").style.display = "none";
 
-    for (let participante in asignaciones) {
-        const li = document.createElement("li");
-        li.textContent = `El amigo secreto sorteado es ${asignaciones[participante]}`;
-        li.classList.add("result-item");
-        resultado.appendChild(li);
-        break; // Detenemos después de agregar el primer resultado
-    }
-}
-Paso 6: Función para reiniciar el juego
-Esta función limpia la lista de amigos y los resultados, y vuelve a mostrar el campo de entrada para que el juego pueda iniciarse de nuevo.
+Contribuir 🤝
+¡Contribuciones son bienvenidas! Por favor, sigue estos pasos para contribuir al proyecto
 
-function reiniciarJuego() {
-    amigos = [];
-    document.getElementById("listaAmigos").innerHTML = "";
-    document.getElementById("listaAmigos").style.display = "block"; // Mostrar la lista nuevamente al reiniciar
-    document.getElementById("resultado").innerHTML = "";
-    document.getElementById("amigo").value = "";
-}
+Haz un fork del repositorio.
+
+Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
+
+Realiza tus cambios y haz commit (git commit -m 'Añadir nueva funcionalidad').
+
+Sube los cambios (git push origin feature/nueva-funcionalidad).
+
+Abre un Pull Request.
 
 Resumen Final:
 
