@@ -1,13 +1,13 @@
-# Challenge Amigo Secreto 🎁
+# Challenge Amigo Secreto
 
 ## Descripción
 Este proyecto implementa un sistema para organizar un "Amigo Secreto". Facilita la asignación aleatoria de amigos secretos y proporciona una interfaz para gestionar el proceso.
 
 ## Requisitos
-- **Java 11** o superior
-- **Maven** (para la gestión de dependencias)
+- Java 11 o superior
+- Maven (para la gestión de dependencias)
 
-## Instalación 🚀
+## Instalación
 Sigue estos pasos para instalar y configurar el proyecto:
 
 ```bash
