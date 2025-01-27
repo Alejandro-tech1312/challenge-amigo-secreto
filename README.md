@@ -46,18 +46,7 @@ Sube los cambios (git push origin feature/nueva-funcionalidad).
 
 Abre un Pull Request.
 
-📸 Capturas de pantalla
-Pantalla principal
-![amigo-secreto](https://github.com/user-attachments/assets/600c9398-e5c1-4e55-90d0-8c202df999ef)
-
-
-
-Pantalla principal con amigos cargados
-
-
-Resultado del sorteo
-
-
+[Captura de Pantalla del Juego](screenshot.png)
 
 Resumen Final:
 
