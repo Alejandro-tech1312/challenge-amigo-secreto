@@ -5,11 +5,11 @@ Este proyecto implementa un sistema para organizar un "Amigo Secreto". Facilita 
 
 ## Requisitos
 - Java 11 o superior
-  - Maven (para la gestión de dependencias)
+- Maven (para la gestión de dependencias)
  
 # Funcionalidades
-Agregar nombres de participantes a la lista
-Realizar el sorteo de "Amigo Secreto"
+Agregar nombres de participantes a la lista,
+Realizar el sorteo de "Amigo Secreto",
 Mostrar los resultados del sorteo
 
 # Instrucciones de uso
