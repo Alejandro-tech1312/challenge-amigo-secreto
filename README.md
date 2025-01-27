@@ -26,26 +26,30 @@ Instrucciones para compilar y ejecutar el proyecto:
 # Compilar el proyecto
 mvn compile
 
-# Compilar el proyecto
-mvn compile
-
 # Ejecutar el proyecto
 mvn exec:java -Dexec.mainClass="com.example.Main"
-
 
 Contribuir 🤝
 ¡Contribuciones son bienvenidas! Por favor, sigue estos pasos para contribuir al proyecto
 
 Haz un fork del repositorio.
-
 Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
-
 Realiza tus cambios y haz commit (git commit -m 'Añadir nueva funcionalidad').
-
 Sube los cambios (git push origin feature/nueva-funcionalidad).
-
 Abre un Pull Request.
 
+Licencia 📝
+Este proyecto está licenciado bajo los términos de la MIT License.
+
+Explicación del Código 🛠️
+Archivos Principales:
+
+Main.java: Contiene el método principal que inicia la aplicación.
+SecretSanta.java: Implementa la lógica para asignar amigos secretos.
+
+Funciones y Métodos Clave
+asignarAmigosSecretos: Asigna amigos secretos de manera aleatoria.
+enviarNotificaciones: Envía notificaciones a los participantes.
 
 Resumen Final:
 
