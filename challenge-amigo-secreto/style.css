@@ -130,10 +130,17 @@ ul {
 }
 
 .result-list {
-    color: #05DF05;
-    font-size: 20px;
+    margin-top: 15px;
+    color: #2979FF; /* Color azul eleéctrico (se puede cambiar) */
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0.3; }
 }
 
 /* Contenedor de botones */
