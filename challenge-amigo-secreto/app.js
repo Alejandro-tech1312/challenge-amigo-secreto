@@ -40,9 +40,6 @@ function sortearAmigo() {
     }
 
     mostrarResultados(asignaciones);
-
-    // Retrasar el reinicio del juego para que se vea el resultado
-    setTimeout(reiniciarJuego, 5000); // 5000 ms = 5 segundos
 }
 
 function mostrarResultados(asignaciones) {
@@ -62,11 +59,11 @@ function mostrarResultados(asignaciones) {
 }
 
 function reiniciarJuego() {
-    amigos = [];
+    amigos = []; // Vaciar el array de amigos
     document.getElementById("listaAmigos").innerHTML = "";
-    document.getElementById("listaAmigos").style.display = "block"; // Mostrar la lista nuevamente al reiniciar
     document.getElementById("resultado").innerHTML = "";
-    document.getElementById("amigo").value = "";
+    document.getElementById("listaAmigos").style.display = "block"; // Mostrar la lista nuevamente
 }
+
 
 
