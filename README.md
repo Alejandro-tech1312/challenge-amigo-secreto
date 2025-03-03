@@ -65,7 +65,6 @@ SecretSanta.java: Implementa la lógica para asignar amigos secretos.
 
 Funciones y Métodos Clave
 asignarAmigosSecretos: Asigna amigos secretos de manera aleatoria.
-enviarNotificaciones: Envía notificaciones a los participantes.
 
 Resumen Final:
 
@@ -74,4 +73,4 @@ Resumen Final:
 3.Actualizamos la visualización de la lista de amigos.
 4.Realizamos el sorteo mezclando la lista y asignando amigos secretos.
 5.Mostramos el resultado de manera personalizada y ocultamos la lista de amigos.
-6.Reiniciamos el juego automáticamente después de unos segundos para permitir un nuevo sorteo.
+6.Reiniciamos el juego mediante el botón "Reiniciar Juego"
