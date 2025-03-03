@@ -70,7 +70,6 @@ Resumen Final:
 
 1.Inicializamos la lista de amigos.
 2.Agregamos amigos a la lista con una entrada de texto.
-3.Actualizamos la visualización de la lista de amigos.
-4.Realizamos el sorteo mezclando la lista y asignando amigos secretos.
-5.Mostramos el resultado de manera personalizada y ocultamos la lista de amigos.
-6.Reiniciamos el juego mediante el botón "Reiniciar Juego"
+3.Realizamos el sorteo.
+4.Mostramos el resultado.
+5.Reiniciamos el juego mediante el botón "Reiniciar Juego"
